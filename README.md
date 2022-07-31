@@ -38,7 +38,7 @@ Luego lo podemos ejecutar desde la consola o desde docker desktop. La opción -d
 
 ## Ejecución del comando
 
-Para entrar al linux primero miramos en el listado de dockers el id del que queremos
+Para entrar al contenedor primero miramos en el listado de dockers el id del que queremos
 
 ```docker container ls```
 
@@ -48,7 +48,7 @@ Que devolverá una tabla de este estilo
 | :-----: | ----- | :-----: |-----|-----|-----------------------| :-----: |
 | 297747ec8a24 | backend-pairing_backend-pairing-apache | 283 | X minutes ago | Up X minutes | 0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp  | php-apache|
 
-Luego le decimos que entramos con /bin/bash usando el nombre del contenedor (también se puede hacer a través de ID)
+Luego entramos en modo consola usando /bin/bash indicando el nombre del contenedor (también se puede hacer a través de ID)
 
 ```docker container exec -it php-apache /bin/bash```
 
